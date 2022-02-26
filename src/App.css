@@ -1,9 +1,75 @@
+.ant-layout-header {
+  height: 74px;
+  background-color: rgb(254, 86, 67);
+  line-height: inherit;
+}
+
 .cards-wrapper {
-  max-width: 900px;
-  margin: 40px auto;
+  margin: 90px auto 20px;
+}
+
+.cards-wrapper .ant-row {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-col {
+  width: 25%;
+  box-sizing: border-box;
+  margin: 20px 15px;
+}
+
+.ant-card {
+  width: 100%;
+}
+
+.detail-wrapper {
+  max-width: 600px;
+  margin: 90px auto 20px;
+  background-color: white;
 }
 
 .ant-card-cover img {
   height: 200px;
   object-fit: cover;
+}
+
+.detail-wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.ant-card-meta-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.restaurant-detail-wrapper {
+  padding: 30px;
+}
+
+@media screen and (max-width: 580px) {
+  .ant-col {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 581px) {
+  .ant-col {
+    width: 40%;
+  }
+  .ant-card-meta-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .ant-col {
+    width: 29%;
+  }
+  
+}
+
+.submit-rating {
+  display: flex;
+  flex-direction: column;
 }
