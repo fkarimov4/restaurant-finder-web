@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Rate, Button } from "antd";
+import { Rate, Button, Divider } from "antd";
 import { UserOutlined } from "@ant-design/icons"
 
 export default function RestaurantDetails() {
@@ -41,9 +41,9 @@ export default function RestaurantDetails() {
         </h1>
         <Rate disabled defaultValue={restaurant.rating} />
         <span style={{ margin: 10 }}>{restaurant.numRatings} ratings</span>
-        <hr />
+        <Divider />
         <h3>{restaurant.address}</h3>
-        <hr />
+        <Divider />
         <h2 style={{ marginTop: "20px", fontSize: 28, fontWeight: 700 }}>
           Rate {restaurant.name}
         </h2>
