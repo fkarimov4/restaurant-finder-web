@@ -1,7 +1,7 @@
 .ant-layout-header {
   height: 74px;
   background-color: rgb(254, 86, 67);
-  line-height: inherit;
+  line-height: 1;
 }
 
 .cards-wrapper {
@@ -24,6 +24,7 @@
 }
 
 .detail-wrapper {
+  width: 100%;
   max-width: 600px;
   margin: 90px auto 20px;
   background-color: white;
